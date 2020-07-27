@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+/*  Header */
+.main-titles {
+  width: 33%;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
