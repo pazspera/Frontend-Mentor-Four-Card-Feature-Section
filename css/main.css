@@ -24,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0 2.7em;
+  padding: 0 2em;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -34,23 +34,23 @@ body {
 /*  Header */
 .main-titles {
   text-align: center;
-  margin: 4.5em 0;
+  margin: 3.5em 0 4.5em 0;
 }
 
 .main-title {
-  font-size: 2.15rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-top: 0em;
 }
 
 .main-secondary-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   margin-bottom: 0;
 }
 
 .main-description {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 /* This goes for desktop 
@@ -64,16 +64,19 @@ body {
 */
 /*  Cards */
 .card-grid {
+  margin: 0 auto;
   margin-bottom: 4.5em;
 }
 
 .card {
+  max-width: 330px;
   background-color: white;
-  padding: 2.2em 1.8em;
+  padding: 1.6em;
+  margin: 0 auto;
   margin-bottom: 2.5em;
   border-radius: 7px;
   border-top-style: solid;
-  border-top-width: 8px;
+  border-top-width: 6px;
   -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
   display: -webkit-box;
@@ -103,13 +106,13 @@ body {
 
 .card-title {
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.45rem;
   margin: 0;
 }
 
 .card-content {
-  margin: .5em 0 1em 0;
-  font-size: 1.15rem;
+  margin: .5em 0;
+  font-size: 0.9rem;
 }
 
 .card-img {
