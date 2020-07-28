@@ -44,7 +44,9 @@ body {
 
 .main-titles {
     text-align: center;
-    margin: 3.5em 0 4.5em 0;
+    width: 70%;
+    max-width: 550px;
+    margin: 3.5em auto;
 }
 
 .main-title {
@@ -66,19 +68,8 @@ body {
     font-size: 1rem;
 }
 
-/* This goes for desktop 
-
-.main-titles {
-    width: 33%;
-    margin: 0 auto;
-    max-width: 650px;
-    text-align: center;
-}
-*/
-
 /*  Cards */
 .card-grid {
-    margin: 0 auto;
     margin-bottom: 4.5em;
 }
 
@@ -132,6 +123,7 @@ body {
 
 /*  Footer */
 .attribution {
+    @extend %dark-font-color;
     text-align: center;
     margin: 1.5em 0;
 }
