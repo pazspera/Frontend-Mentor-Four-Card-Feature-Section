@@ -1,3 +1,26 @@
+/*  Primary Colors */
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+/*  Neutral Colors */
+$dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 100%, 100%);
+
+/*  Font colors */
+%dark-font-color {
+    color: $dark-blue;
+}
+
+%light-font-color {
+    color: $grayish-blue;
+}
+
+/*  General settings */
+
 *,
 *::before,
 *::after {
@@ -10,17 +33,71 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 2.7em;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    background-color: $light-gray;
 }
 
 /*  Header */
+
+.main-titles {
+    text-align: center;
+    margin: 4.5em 0;
+}
+
+.main-title {
+    @extend %dark-font-color;
+    font-size: 2.15rem;
+    font-weight: 600;
+    margin-top: 0em;
+}
+
+.main-secondary-title {
+    @extend %dark-font-color;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.main-description {
+    @extend %light-font-color;
+    font-size: 1.25rem;
+}
+
+/* This goes for desktop 
 
 .main-titles {
     width: 33%;
     margin: 0 auto;
     max-width: 650px;
     text-align: center;
+}
+*/
+
+/*  Cards */
+.card-grid {
+    margin-bottom: 4.5em;
+}
+
+.card {
+    background-color: $white;
+    padding: 2.2em 1.8em;
+    margin-bottom: 2.5em;
+    border-radius: 10px;
+}
+
+.card-title {
+    @extend %dark-font-color;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+
+/*  Footer */
+.attribution {
+    text-align: center;
+    margin: 1.5em 0;
 }
