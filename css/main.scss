@@ -34,7 +34,6 @@ html {
 body {
     margin: 0;
     padding: 0 2em;
-    height: 100vh;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     background-color: $light-gray;
@@ -128,3 +127,38 @@ body {
     margin: 1.5em 0;
 }
 
+
+/*  Desktop: aligns the cards in the cross format */
+@media (min-width: 1100px) {
+    .card-grid {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+            ". . tb tb . ."
+            "s s tb tb c c"
+            "s s k k c c"
+            ". . k k . .";
+    }
+
+    .card {
+        &#supervisor {
+            grid-area: s;
+        }
+
+        &#team-builder {
+            grid-area: tb;
+        }
+
+        &#karma {
+            grid-area: k;
+        }
+
+        &#calculator {
+            grid-area: c;
+        }
+
+    }
+}
