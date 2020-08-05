@@ -122,13 +122,13 @@ body {
 /*  Desktop: aligns the cards in the cross format */
 @media (min-width: 1100px) {
   .card-grid {
-    max-width: 1100px;
-    margin: 0 auto;
     display: -ms-grid;
     display: grid;
+    margin: 0 auto;
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: minmax(100px, auto);
+    max-width: 1100px;
         grid-template-areas: ". . tb tb . ." "s s tb tb c c" "s s k k c c" ". . k k . .";
   }
   .card#supervisor {
@@ -156,6 +156,48 @@ body {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: c;
+  }
+}
+
+/* Tablet: */
+@media (max-width: 1100px) and (min-width: 750px) {
+  .card-grid {
+    display: -ms-grid;
+    display: grid;
+    max-width: 780px;
+    margin: 0 auto;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: ". tb tb ." ". tb tb ." "s s c c" "s s c c" ". k k ." ". k k .";
+  }
+  .card#supervisor {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: s;
+  }
+  .card#team-builder {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: tb;
+  }
+  .card#karma {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: k;
+  }
+  .card#calculator {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: c;
   }
